@@ -1,0 +1,29 @@
+body {
+    background-color: lightsteelblue;
+    padding-left: 30px;
+}
+
+h1 {
+    font-size: 30px;
+    color: black;
+}
+
+h2 {
+    font-size: 24px;
+    color: navy;
+}
+
+h3 {
+    font-size: 20px;
+    color: navy;
+    padding-bottom: 5px;
+}
+
+hr {
+    color: black;
+    background-color:  black;
+}
+
+.info {
+    padding-left: 20px;
+}
