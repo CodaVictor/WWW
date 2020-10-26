@@ -1,5 +1,8 @@
 .foto img {
     height: 800px;
-    position: center;
+}
+
+.foto {
+    max-width: 100%;
     margin: 10px;
 }

@@ -1,0 +1,45 @@
+@media screen and (max-width: 768px) {
+    #pageHeaderTitle { /*h1*/
+        font-size: 1.6em;
+    }
+
+    #menu {
+        display: flex;
+        width: 100%;
+    }
+
+    #menu a {
+        font-size: 0.9em;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    /*------------Gallery Content Styles------------*/
+    .galleryArticle {
+        width: 100%;
+        /*margin-top: 5px;*/
+    }
+
+    .galleryArticle > a > img {
+        max-width: 100%;
+    }
+
+    .galleryArticle > img {
+        max-width: 100%;
+    }
+
+    #pageCenter {
+        display: block;
+    }
+
+    .gallerySectionTitle { /*h2*/
+        font-size: 1.3em;
+    }
+
+    .galleryImgTitle { /*h3*/
+        font-size: 1.0em;
+        margin-left: 0.3em;
+    }
+}
