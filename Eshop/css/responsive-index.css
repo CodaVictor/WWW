@@ -1,0 +1,20 @@
+@media screen and (max-width: 768px) {
+    #pageHeaderTitle { /*h1*/
+        font-size: 1.6em;
+    }
+
+    #menu {
+        /*
+        display: flex;
+        width: 100%;
+        */
+    }
+
+    #menu a {
+        font-size: 0.9em;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
