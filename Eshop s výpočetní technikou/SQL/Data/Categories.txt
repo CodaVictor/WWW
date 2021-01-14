@@ -1,0 +1,12 @@
+INSERT INTO categories (category_name) VALUES ('PC sestavy');
+INSERT INTO categories (category_name) VALUES ('Notebooky');
+INSERT INTO categories (category_name) VALUES ('Základní desky');
+INSERT INTO categories (category_name) VALUES ('Procesory');
+INSERT INTO categories (category_name) VALUES ('Paměti');
+INSERT INTO categories (category_name) VALUES ('Grafické karty');
+INSERT INTO categories (category_name) VALUES ('Zdroje');
+INSERT INTO categories (category_name) VALUES ('Chladiče');
+INSERT INTO categories (category_name) VALUES ('PC skříně');
+INSERT INTO categories (category_name) VALUES ('Kabeláž');
+INSERT INTO categories (category_name) VALUES ('Optické mechaniky');
+INSERT INTO categories (category_name) VALUES ('Disky');

@@ -1,0 +1,5 @@
+INSERT INTO products (product_name, product_code, price, number_in_stock, listed_date, image_path, specs, categories_category_id) VALUES 
+('ASUS DRW-24D5MT černá bulk', '90DD01Y0-B10010', 330, 10, UTC_TIMESTAMP(),  '90DD01Y0-B10010.jpg', 'DVD mechanika SATA, DVD±R 24x, DVD+R DL 8x, DVD-R DL 8x, DVD+RW 8x, DVD-RW 6x, DVD-RAM 5x, CD-R 48x, CD-RW 24x, podporuje média M-Disc', 11);
+
+INSERT INTO products (product_name, product_code, price, number_in_stock, listed_date, image_path, specs, categories_category_id) VALUES 
+('VERBATIM CD/DVD Slimline USB-C, černá', '43886', 826, 10, UTC_TIMESTAMP(),  '43886.jpg', 'Externí vypalovačka CD-ROM, formát DVD a CD', 11);

@@ -1,0 +1,63 @@
+#pay-ship-header {
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.pay-ship-container2 {
+    margin-bottom: 20px;
+    display: block; /*grid*/
+    max-width: 100%;
+    /*padding-bottom: 20px;*/
+    border: 1px solid #2671a6;
+}
+
+.pay-ship-shipping-row-grid {
+    display: grid;
+    grid-template-columns: 40px 0.1fr 4fr 1fr 2fr;
+    grid-gap: 0px 20px;
+    max-width: 100%;
+    padding: 10px;
+    /*border: 1px solid #2671a6;*/
+    border-radius: 3px;
+    margin: auto;
+    align-items: center;
+}
+
+.pay-ship-center-text-h {
+    text-align: center;
+}
+
+#pay-ship-form-shipping {
+    margin-bottom: 0;
+}
+
+.pay-ship-shipping-image {
+    display: block;
+    object-fit: cover;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+}
+
+.pay-ship-payment-row-grid {
+    display: grid;
+    grid-template-columns: 40px 0.1fr 4fr 1fr;
+    grid-gap: 0px 20px;
+    max-width: 100%;
+    padding: 10px;
+    /*border: 1px solid #2671a6;*/
+    border-radius: 3px;
+    margin: auto;
+    align-items: center;
+}
+
+.pay-ship-payment-image {
+    display: block;
+    object-fit: cover;
+    height: 25px;
+    width: auto;
+    margin: auto;
+}
+

@@ -1,0 +1,5 @@
+INSERT INTO products (product_name, product_code, price, number_in_stock, listed_date, image_path, specs, categories_category_id) VALUES 
+('Samsung 970 EVO 1TB', 'MZ-V7E1T0BW', 2892, 10, UTC_TIMESTAMP(),  'MZ-V7E1T0BW.jpg', 'SSD disk M.2 (PCIe 3.0 4x NVMe), TLC (Triple-Level Cell), rychlost čtení 3400MB/s, rychlost zápisu 2500MB/s, životnost 600TBW', 12);
+
+INSERT INTO products (product_name, product_code, price, number_in_stock, listed_date, image_path, specs, categories_category_id) VALUES 
+('WD Black 500GB', 'WD5003AZEX', 1536, 10, UTC_TIMESTAMP(),  'WD5003AZEX.jpg', 'Pevný disk 3,5", SATA III, maximální rychlost přenosu 150 MB/s, cache 64 MB, 7200 ot/min', 12);

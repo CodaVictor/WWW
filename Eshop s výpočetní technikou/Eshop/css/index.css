@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.colorTemplate1 {
+    background-color: #e0e0d1;
+}
+
+.colorTemplate2 {
+    background-color: #333333;
+}
+
+.colorTemplate3 {
+    background-color: #d9d9d9;
+}
+
+/* ======================== */
+.generalContainer {
+    padding: 20px;
+    display: grid;
+    max-width: 100%;
+    background-color: #d9d9d9;
+}
+
+.generalHeader1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: black;
+}
+
+.generalHeader2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+/* ======== Obecný styl tlačítka ======== */
+.generalButton1 {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    border-radius: 3px;
+    border-bottom: solid 3px #339618;
+    text-align: center;
+    margin-top: 10px;
+    padding: 6px 20px 6px 20px;
+    display: block;
+    text-decoration: none;
+    float: right;
+    width: auto;
+}
+
+.generalButton2 {
+    margin: 6px;
+    padding: 6px;
+    background-color: #839b97;
+    text-decoration: none;
+    border-radius: 3px;
+    color: white;
+}
+/* ====================================== */
+
+.generalForm {
+    display: grid;
+    margin-block-end: 0;
+}
+
+/* ====================================== */
+
+#topBar {
+    height: auto;
+}
+
+#headerListUser {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 0;
+    padding-right: 20px;
+    text-align: right;
+}
+
+/* Úprava top-bar-component (pro všechny) */
+.headerListUserItem {
+    display:inline;
+    margin: 0px 5px;
+}
+
+.headerListUserItem a {
+    color: #417a9a;
+    text-decoration: none;
+    margin-left: 6px;
+}
+
+/* Úprava top-bar-component (pro správu) */
+.headerListUserItemSt {
+    display:inline;
+    margin: 0px 5px;
+}
+
+.headerListUserItemSt a {
+    color: #d9962e;
+    text-decoration: none;
+    margin-left: 6px;
+}
+
+
+#menu {
+    /*width: 230px; menu na boku*/
+    /*position: fixed;*/ /*Při scrollování se pozice menu nebude měnit*/
+    /*z-index: 1;*/ /*Úroveň překrávání*/
+    background-color: #111;
+    overflow-x: hidden; /*Zakáže horizontální scroll*/
+    display: flex;
+    width: 100%;
+    /*padding-top: 20px;*/
+    justify-content: center;
+    padding: 4px 0 4px 0;
+}
+
+#menu a {
+    color: white;
+    display: grid;
+    padding: 10px 12px 10px 12px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: #728a86;
+    width: auto;
+    text-align: center;
+    align-items: center;
+    border-left: 2px solid #d9d9d9;
+    transition: 0.5s;
+}
+
+#menu a:first-child {
+    border-left: 0;
+}
+
+#menu a:hover {
+    background-color: #9cb6b1;
+    transition: 0.5s;
+}
+
+/* Odstraní problém, při kterém docházelo k provádění transitionu při znovunačtení stránky */
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+
+#sideMenu a:hover {
+    color: white;
+    background-color: #e68a00;
+}
+
+#pageHeader {
+    width: 100%;
+    height: auto;
+    /*justify-content: space-between;*/
+}
+
+#pageHeaderDown {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+#pageCenter {
+    display: block;
+    min-height: 100%;
+    background-color: #ede3ce;
+}
+
+#pageContent {
+    width: 1400px;
+    margin: auto;
+    /*
+    border: solid 1px black;
+    padding: 15px;
+    */
+}
+
+.pageSectionHeader {
+    background-color: #e0e0d1;
+    width: 100%;
+    padding: 0.7em;
+}
+
+.pageSectionTitle { /*h2*/
+    font-size: 1.5em;
+    /*margin-left: 0.5em;*/
+    padding: 0px;
+    margin: 0;
+}
+
+#pageHeaderTitle { /*h1*/
+    color: white;
+    font-size: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footerHeader {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer a {
+    font-size: 14px;
+    color: white;
+    /*text-decoration: none;*/
+}
+
+/* ============ Obecný styl tabulky ============ */
+.generalTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.generalTable td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.generalTable tr {
+    background-color: #ebebe0;
+}
+
+.generalTable tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.generalTable tr:hover {
+    background-color: #b3d1ff;
+}
+
+.generalTable th {
+    padding: 8px 4px 8px 4px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+/*------------Gallery Content Styles------------*/
+
+.gallerySection {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.galleryArticle {
+    width: 400px;
+    border: 1px solid lightslategray;
+    margin: 8px;
+    background-color: #e0e0d1;
+}
+
+.galleryArticle > img {
+    width: 400px;
+}
+
+.galleryArticle > a > img {
+    width: 400px;
+}
+
+.galleryImgTitle { /*h3*/
+    font-size: 1.2em;
+    margin-left: 0.5em;
+}
+
+

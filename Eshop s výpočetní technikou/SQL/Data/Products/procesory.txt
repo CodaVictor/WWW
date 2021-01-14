@@ -1,0 +1,5 @@
+INSERT INTO products (product_name, product_code, price, number_in_stock, listed_date, image_path, specs, categories_category_id) VALUES 
+('AMD RYZEN 5 3600', '100-100000031BOX', 4372, 10, UTC_TIMESTAMP(),  '100-100000031BOX.jpg', 'Procesor 6 jádrový, 12 vláken, 3,6GHz (TDP 65W), Boost 4,2 GHz, 32MB L3 cache, socket AMD AM4, Matisse, box chladič, Wraith Stealth', 4);
+
+INSERT INTO products (product_name, product_code, price, number_in_stock, listed_date, image_path, specs, categories_category_id) VALUES 
+('Intel Core i7-9700K', 'BX80684I79700K', 6198, 10, UTC_TIMESTAMP(),  'BX80684I79700K.jpg', 'Procesor 8 jádrový, 8 vláken, 3,6GHz (TDP 95W), Turboboost 4,9GHz, 12MB L3 cache, Intel UHD Graphics 630 1200MHz, socket Intel 1151, Coffee Lake refresh, bez chladiče, pouze chipset Intel řady 3xx', 4);

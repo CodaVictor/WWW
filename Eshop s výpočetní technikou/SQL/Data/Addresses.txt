@@ -1,0 +1,2 @@
+INSERT INTO addresses (city, street, zip_code, type, users_user_id) VALUES ('Randomov', 'Randomína Randomova 77', '12345', 'F', 2);
+INSERT INTO addresses (city, street, zip_code, type, users_user_id) VALUES ('Betonov', 'Betonína Betonova 66', '12121', 'D', 2);

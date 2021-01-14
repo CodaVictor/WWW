@@ -1,0 +1,5 @@
+INSERT INTO delivery_types (delivery_name, price, speed, note) VALUES ('Zásilkovna', 49, 2, 'Osobní odběr na výdejních místech');
+INSERT INTO delivery_types (delivery_name, price, speed) VALUES ('PPL', 109, 3);
+INSERT INTO delivery_types (delivery_name, price, speed) VALUES ('Česká pošta - Do ruky', 89, 3);
+INSERT INTO delivery_types (delivery_name, price, speed) VALUES ('Česká pošta - Na poštu', 89, 3);
+INSERT INTO delivery_types (delivery_name, price, speed) VALUES ('TopTrans', 349, 2);

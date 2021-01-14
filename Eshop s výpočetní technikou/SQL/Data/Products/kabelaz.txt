@@ -1,0 +1,5 @@
+INSERT INTO products (product_name, product_code, price, number_in_stock, listed_date, image_path, specs, categories_category_id) VALUES 
+('PremiumCord SATA III 0.3m', 'kfsa-20-03', 70, 10, UTC_TIMESTAMP(),  'kfsa-20-03.jpg', 'Datový kabel propojovací, 0,3 m, male konektory: 2× SATA (Serial ATA), oboustranná koncovka a plochý, rovné zakončení', 10);
+
+INSERT INTO products (product_name, product_code, price, number_in_stock, listed_date, image_path, specs, categories_category_id) VALUES 
+('PremiumCord HDMI 1.4 propojovací 2m', 'kphdme2', 95, 10, UTC_TIMESTAMP(),  'kphdme2.jpg', 'Video kabel propojovací, 2 m, male konektory: 2× HDMI (HDMI 1.4), pozlacené konektory a oboustranná koncovka', 10);

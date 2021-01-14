@@ -1,0 +1,5 @@
+INSERT INTO products (product_name, product_code, price, number_in_stock, listed_date, image_path, specs, categories_category_id) VALUES 
+('SilentiumPC Fera 3 HE1224', 'SPC144', 578, 10, UTC_TIMESTAMP(),  'SPC144.jpg', 'Chladič na procesor socket AM2, AM2+, AM3, AM3+, AM4, FM1, FM2 a FM2+, 1200, 775, 1150, 1151, 1155, 1156, 1366, 2011, 2011-3 a 2066, 180 W, 1x120mm ventilátor, 4× heatpipe, max. hlučnost 15dB, max. rychlost 1600ot/min, výška 155mm, PWM', 8);
+
+INSERT INTO products (product_name, product_code, price, number_in_stock, listed_date, image_path, specs, categories_category_id) VALUES 
+('Be quiet! DARK ROCK 4', 'BK021', 1487, 10, UTC_TIMESTAMP(),  'BK021.jpg', 'Chladič na procesor socket AM2, AM2+, AM3, AM3+, AM4, FM1, FM2 a FM2+, 1200, 1150, 1151, 1155, 1156, 1366, 2011, 2011-3 a 2066, 200 W, 1x135mm ventilátor, 6× heatpipe, max. hlučnost 21,4dB, max. rychlost 1400ot/min, výška 159,4mm', 8);

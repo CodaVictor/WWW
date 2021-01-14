@@ -1,0 +1,5 @@
+INSERT INTO products (product_name, product_code, price, number_in_stock, listed_date, image_path, specs, categories_category_id) VALUES 
+('Corsair CV550', 'CP-9020210-EU', 1074, 10, UTC_TIMESTAMP(),  'CP-9020210-EU.jpg', 'Počítačový zdroj 550W, ATX, 80 PLUS Bronze, účinnost 88%, 2 ks PCIe (8-pin / 6+2-pin), 7 × SATA, aktivní PFC, tepelná regulace otáček a síťový vypínač, 120 mm ventilátor, hloubka 125 mm', 7);
+
+INSERT INTO products (product_name, product_code, price, number_in_stock, listed_date, image_path, specs, categories_category_id) VALUES 
+('EVGA 600W', '100-W1-0600-K2', 1074, 10, UTC_TIMESTAMP(),  '100-W1-0600-K2.jpg', 'Počítačový zdroj 600W, ATX, 80 PLUS, účinnost 80%, 2 ks PCIe (8-pin / 6+2-pin), 6 × SATA, aktivní PFC, tepelná regulace otáček a síťový vypínač, 120 mm ventilátor, hloubka 140 mm', 7);

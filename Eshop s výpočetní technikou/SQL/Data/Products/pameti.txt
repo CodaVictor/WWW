@@ -1,0 +1,5 @@
+INSERT INTO products (product_name, product_code, price, number_in_stock, listed_date, image_path, specs, categories_category_id) VALUES 
+('HyperX 16GB KIT DDR4 3200MHz CL16 FURY series', 'HX432C16FB3K2/16', 1569, 10, UTC_TIMESTAMP(),  'HX432C16FB3K216.jpg', 'Operační paměť 2x8GB, PC4-25600, CL16-18-18, napětí 1.35 V, pasivní chladič a XMP 2.0', 5);
+
+INSERT INTO products (product_name, product_code, price, number_in_stock, listed_date, image_path, specs, categories_category_id) VALUES 
+('Kingston SO-DIMM 16GB DDR4 2666MHz', 'KCP426SD8/16', 1404, 10, UTC_TIMESTAMP(),  'KCP426SD816.jpg', 'Operační paměť 1x16GB, PC4-21300, CL19, napětí 1.2 V, registered', 5);

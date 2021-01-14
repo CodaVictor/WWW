@@ -1,0 +1,128 @@
+CREATE TABLE addresses (
+    address_id      INTEGER NOT NULL AUTO_INCREMENT,
+    city            VARCHAR(60) NOT NULL,
+    street          VARCHAR(60) NOT NULL,
+    zip_code        VARCHAR(5) NOT NULL,
+    type            VARCHAR(30),
+    users_user_id   INTEGER NOT NULL,
+    PRIMARY KEY     (address_id)
+);
+
+CREATE TABLE categories (
+    category_id     INTEGER NOT NULL AUTO_INCREMENT,
+    category_name   VARCHAR(60) NOT NULL,
+    note            VARCHAR(300),
+    PRIMARY KEY     (category_id)
+);
+
+CREATE TABLE delivery_types (
+    delivery_id     INTEGER NOT NULL AUTO_INCREMENT,
+    delivery_name   VARCHAR(40) NOT NULL,
+    price           INTEGER NOT NULL,
+    speed           INTEGER NOT NULL,
+    note            VARCHAR(200),
+    PRIMARY KEY     (delivery_id)
+);
+
+CREATE TABLE order_items (
+    quantity              INTEGER NOT NULL,
+    price                 INTEGER NOT NULL,
+    orders_order_id       INTEGER NOT NULL,
+    products_product_id   INTEGER NOT NULL
+);
+
+CREATE TABLE orders (
+    order_id                     INTEGER NOT NULL AUTO_INCREMENT,
+    order_status                 VARCHAR(50),
+    order_date                   DATETIME(0) NOT NULL,
+    shipped_date                 DATETIME(0),
+    sum_price                    INTEGER NOT NULL,
+    custom_order_id              VARCHAR(20),
+    note                         VARCHAR(200),
+    users_user_id                INTEGER NOT NULL,
+    delivery_types_delivery_id   INTEGER NOT NULL,
+    payment_payment_id           INTEGER NOT NULL,
+    addresses_address_id          INTEGER NOT NULL,
+    PRIMARY KEY                  (order_id)
+);
+
+CREATE TABLE payment (
+    payment_id     INTEGER NOT NULL AUTO_INCREMENT,
+    payment_name   VARCHAR(50) NOT NULL,
+    price          INTEGER NOT NULL,
+    note           VARCHAR(300),
+    PRIMARY KEY    (payment_id)
+);
+
+CREATE TABLE products (
+    product_id               INTEGER NOT NULL AUTO_INCREMENT,
+    product_name             VARCHAR(80) NOT NULL,
+    product_code             VARCHAR(30) NOT NULL,
+    price                    INTEGER NOT NULL,
+    number_in_stock          INTEGER NOT NULL,
+    listed_date              DATETIME(0) NOT NULL,
+    image_path               VARCHAR(500),
+    specs                    VARCHAR(600),
+    categories_category_id   INTEGER NOT NULL,
+    PRIMARY KEY              (product_id)
+);
+
+CREATE TABLE reviews (
+    text                  VARCHAR(400) NOT NULL,
+    users_user_id         INTEGER NOT NULL,
+    products_product_id   INTEGER NOT NULL
+);
+
+CREATE TABLE users (
+    user_id      INTEGER NOT NULL AUTO_INCREMENT,
+    first_name   VARCHAR(45) NOT NULL,
+    last_name    VARCHAR(45) NOT NULL,
+    email        VARCHAR(60) NOT NULL,
+    password     VARCHAR(128) NOT NULL,
+    phone        VARCHAR(12) NOT NULL,
+    role         VARCHAR(30) NOT NULL,
+    active       TINYINT(1) NOT NULL,
+    vat_number   VARCHAR(20),
+    note         VARCHAR(200),
+    PRIMARY KEY  (user_id)
+);
+
+ALTER TABLE addresses
+    ADD CONSTRAINT addresses_users_fk FOREIGN KEY ( users_user_id )
+        REFERENCES users ( user_id );
+
+ALTER TABLE order_items
+    ADD CONSTRAINT order_items_orders_fk FOREIGN KEY ( orders_order_id )
+        REFERENCES orders ( order_id );
+
+ALTER TABLE order_items
+    ADD CONSTRAINT order_items_products_fk FOREIGN KEY ( products_product_id )
+        REFERENCES products ( product_id );
+
+ALTER TABLE orders
+    ADD CONSTRAINT orders_addresses_fk FOREIGN KEY ( addresses_address_id )
+        REFERENCES addresses ( address_id );
+
+ALTER TABLE orders
+    ADD CONSTRAINT orders_delivery_types_fk FOREIGN KEY ( delivery_types_delivery_id )
+        REFERENCES delivery_types ( delivery_id );
+
+ALTER TABLE orders
+    ADD CONSTRAINT orders_payment_fk FOREIGN KEY ( payment_payment_id )
+        REFERENCES payment ( payment_id );
+
+ALTER TABLE orders
+    ADD CONSTRAINT orders_users_fk FOREIGN KEY ( users_user_id )
+        REFERENCES users ( user_id );
+
+ALTER TABLE products
+    ADD CONSTRAINT products_categories_fk FOREIGN KEY ( categories_category_id )
+        REFERENCES categories ( category_id );
+
+ALTER TABLE reviews
+    ADD CONSTRAINT reviews_products_fk FOREIGN KEY ( products_product_id )
+        REFERENCES products ( product_id );
+
+ALTER TABLE reviews
+    ADD CONSTRAINT reviews_users_fk FOREIGN KEY ( users_user_id )
+        REFERENCES users ( user_id );

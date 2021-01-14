@@ -1,0 +1,8 @@
+INSERT INTO products (product_name, product_code, price, number_in_stock, listed_date, image_path, specs, categories_category_id) VALUES 
+('HP 260 G3 DM', '4VF98EA#BCM', 7595, 10, UTC_TIMESTAMP(),  '4VF98EABCM.jpg', 'Mini počítač Intel Pentium 4415U Kaby Lake, Intel HD Graphics 610, RAM 4GB DDR4, HDD 0,5 TB 7200 ot/min, Bez mechaniky, VGA D-SUB a HDMI, 4× USB 3.2, 2× USB 2.0, myš a klávesnice, Windows 10 Pro', 1);
+
+INSERT INTO products (product_name, product_code, price, number_in_stock, listed_date, image_path, specs, categories_category_id) VALUES 
+('Dell Vostro 3681 SFF', 'VGRGX', 10570, 10, UTC_TIMESTAMP(),  'VGRGX.jpg', 'Počítač Intel Core i3 10100 Comet Lake 4.3 GHz, Intel UHD Graphics 630, RAM 4GB DDR4, HDD 1 TB, DVD, Wi-Fi, VGA D-SUB a HDMI, 4× USB 3.2, 4× USB 2.0, typ skříně: Desktop, myš a klávesnice, Windows 10 Pro, (NBD)', 1);
+
+
+

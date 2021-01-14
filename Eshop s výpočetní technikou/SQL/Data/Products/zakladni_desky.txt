@@ -1,0 +1,5 @@
+INSERT INTO products (product_name, product_code, price, number_in_stock, listed_date, image_path, specs, categories_category_id) VALUES 
+('ASUS PRIME Z490-P', '90MB12V0-M0EAY0', 2644, 10, UTC_TIMESTAMP(),  '90MB12V0-M0EAY0.jpg', 'Základní deska Intel Z490, 4x DDR4 4600(OC)MHz, 2x PCIe x16 3.0, 4x SATA III, 2x M.2, DP, HDMI, USB 3.2 Gen 2, GLAN, 8ch audio, ATX, sc1200', 3);
+
+INSERT INTO products (product_name, product_code, price, number_in_stock, listed_date, image_path, specs, categories_category_id) VALUES 
+('ASUS TUF GAMING B550-PLUS', '90MB14G0-M0EAY0', 2892, 10, UTC_TIMESTAMP(),  '90MB14G0-M0EAY0.jpg', 'Základní deska AMD B550, 4x DDR4 4400(OC)MHz, PCIe x16 4.0, 6x SATA III, 2x M.2, DP, HDMI, USB-C 3.2 Gen 2, 2.5GLAN, 8ch audio, ATX, scAM4', 3);

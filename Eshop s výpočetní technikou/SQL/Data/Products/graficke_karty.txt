@@ -1,0 +1,5 @@
+INSERT INTO products (product_name, product_code, price, number_in_stock, listed_date, image_path, specs, categories_category_id) VALUES 
+('MSI GeForce GTX 1650 D6 VENTUS XS V1', 'GTX 1650 D6 VENTUS XS V1', 4131, 10, UTC_TIMESTAMP(),  'GTX 1650 D6 VENTUS XS V1.jpg', 'Grafická karta 4GB GDDR6 (12000MHz), NVIDIA GeForce Turing (TU117, 1485 MHz), Boost 1590 MHz, PCI Express x16 3.0, 128Bit, DisplayPort 1.4, DVI-D a HDMI 2.0b', 6);
+
+INSERT INTO products (product_name, product_code, price, number_in_stock, listed_date, image_path, specs, categories_category_id) VALUES 
+('ASUS GT710-4H-SL-2GD5', '90YV0E60-M0NA00', 1239, 10, UTC_TIMESTAMP(),  '90YV0E60-M0NA00.jpg', 'Grafická karta 2GB GDDR5 (5012MHz), NVIDIA GeForce Keppler 2.0 (GK208B, 954 MHz), PCI Express x16 2.0, 64Bit, HDMI', 6);

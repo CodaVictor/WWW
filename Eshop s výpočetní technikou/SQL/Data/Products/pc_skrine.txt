@@ -1,0 +1,5 @@
+INSERT INTO products (product_name, product_code, price, number_in_stock, listed_date, image_path, specs, categories_category_id) VALUES 
+('Corsair 110Q černá', 'CC-9011184-WW', 1156, 10, UTC_TIMESTAMP(),  'CC-9011184-WW.jpg', 'Počítačová skříň ATX, mATX (Micro ATX) a mITX (Mini ITX), 2× 3,5", 2× 2,5", USB 3.2 Gen 1 (USB 3.0), Sluchátka a Mikrofon, 1x120mm, 160 mm max. výška chladiče, 330 mm max. délka grafické karty, bez zdroje, bočnice ocelová', 9);
+
+INSERT INTO products (product_name, product_code, price, number_in_stock, listed_date, image_path, specs, categories_category_id) VALUES 
+('SilentiumPC Regnum RG6V TG Pure Black', 'SPC261', 1569, 10, UTC_TIMESTAMP(),  'SPC261.jpg', 'Počítačová skříň ATX, mATX (Micro ATX), mITX (Mini ITX) a eATX (Extended ATX), 2× 2,5", 2× 2.5"/3.5", USB 3.2 Gen 1 (USB 3.0), Sluchátka a Mikrofon, 4x120mm, 162 mm max. výška chladiče, 360 mm max. délka grafické karty, bez zdroje, bočnice temperované sklo', 9);

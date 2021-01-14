@@ -1,0 +1,1 @@
+INSERT INTO users (first_name, last_name, email, password, phone, role, active) VALUES ('Viktor', 'Homolka', 'v.homolka@email.cz', 'heslo', '123456789', 'admin', 1)
